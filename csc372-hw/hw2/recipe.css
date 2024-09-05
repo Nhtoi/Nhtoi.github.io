@@ -30,6 +30,18 @@ a{
     text-decoration: line-through;
 }
 
-.directions-bold{
-    font-weight: bold;
+.underline{
+text-decoration: underline;
+}
+
+.user-comments{
+    background-color:#FFFFA8;
+    font-style: italic;
+    margin-left: 5%;
+}
+
+footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 82%;
+    text-align: right;
 }

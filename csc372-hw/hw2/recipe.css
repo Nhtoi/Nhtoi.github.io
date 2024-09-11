@@ -3,23 +3,30 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #404040 ;
     font-size: 11pt;
+    /* Background Image repeating silverware */
+    background-image: url("assets/silverware.jpg");
 }
 
 h1, h2, h3, h4, h5, h6{
     text-decoration: underline;
     color: #A4A400;
-    background-color: #F0F0F0 ;
+    background-color: #F0F0F0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
     font-size: 11pt;
-    
+   /* Tight Heading Background */
+    display: inline-block;
 
 }
 
-h1{
+.h1-container {
     text-align: center;
+}
+
+h1{
     font-size: 22pt;
     font-weight: bold;
+    display: inline-block;
 }
 
 a{
@@ -30,6 +37,22 @@ a{
     text-decoration: line-through;
 }
 
-.directions-bold{
+.underline{
+text-decoration: underline;
+}
+
+.bold{
     font-weight: bold;
+}
+
+.user-comments{
+    background-color:#FFFFA8;
+    font-style: italic;
+    margin-left: 5%;
+}
+
+footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 82%;
+    text-align: right;
 }

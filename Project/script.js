@@ -5,13 +5,13 @@ let shopnowBtn = document.getElementById("call-to-action")
 let home = document.getElementById("logo-image")
 
 searchBtn.addEventListener("click", function() {
-    window.location.replace("products.html");
+    window.open("products.html");
 });
 
 shopnowBtn.addEventListener("click", function(){
-    window.location.replace("products.html");
+    window.open("products.html");
 })
 
 home.addEventListener("click", function(){
-    window.location.replace("index.html");
+    window.open("index.html");
 })

@@ -1,13 +1,12 @@
 body {
     background-color: #F1CEBE;
-    margin-top: 90px; 
-    margin-left: 0px;
-    margin-right: 6px;
+    margin: 0;
+    font-family: 'Arial, sans-serif';
+    overflow-x: hidden;
 }
 
-img{
-    width: 300px;
-    height: 300px;
+header {
+    position: relative;
 }
 
 nav {
@@ -17,120 +16,257 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #f49595;
     height: 105px;
-    border-bottom: solid;
-    border-color: white;
-}
-
-a{
-    text-decoration: none;
-    color: #F1CEBE;
-    font-size: 25px;
-    font-weight: bolder;
-    text-shadow: 0 0 3px black;
-}
-
-#nav-menu{
-    display: flex;
-    align-content: space-around;
-    align-items: flex-end;
-    gap: 25px;
-    margin-right: 475px;
-
-}
-
-#search{
-    width: 20px;
-    height: 20px;
-    margin-bottom: 5px;
+    border-bottom: solid 2px white;
+    z-index: 1000;
+ 
 }
 
 #logo-nav {
-    margin-left: 400px;
-
+    margin-left: 20px;
+ 
 }
 
-#logo-img{
+#logo-img {
+ 
     width: 250px;
     height: 100px;
 }
 
-header {
-    width: 100%;
-    height: 795px;
-}
-
-main{
-    
-    background-color: #f49595;
-    height: 250px;
-    width: 100%;
-}
-
-#image-gallery{
+#nav-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 25px;
-    margin-top: 20px;
+    margin-right: 20px;
+
 }
 
-.gallery-images {
-    width: 225px;
-    height: 300px;
-    object-fit: cover;
-    border-style: solid;
-    border-color: white;
+nav a {
+    text-decoration: none;
+    color: #F1CEBE;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 3px black;
+    transition: color 0.3s;
 }
 
+nav a:hover {
+    color: #ffffff;
+}
 
-#hero-text{
+#search {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#hero-text {
     font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 150px; 
     color: #fec89a;
     text-shadow: 0 0 2px black;
+    text-align: center;
 }
 
-#search-container{
+main {
+    margin-top: 20px;
+}
+
+#introduction {
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 0 0 2px black;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+#recommendations {
     display: flex;
+    flex-direction: row;
+    align-content: center;
     justify-content: center;
-    gap: 20px;
+    align-items: center; 
+    gap: 40px;
+    background-color: #f49595;
+    height: 500px;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: white;
 }
 
-input {
+.restaurant {
+    background-color: #fff3f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}  
+.restaurant h2 {
+    margin-top: 0;
+    color: #f49595;
+}
+
+.dishes-container {
     display: flex;
-    width: 550px;
-    height: 50px;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 60px;
-    border: 5px solid var(--Primary-50, black);
-    padding-left: 45px; 
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 23px;
-    color: black;
-    background: url('Assets/magnifying-glass-icon.png') no-repeat 15px center; 
-    background-size: 20px; 
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
 }
 
-#search-btn{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        border-radius: 8px;
-        background-color: #fec89a;
-        color: white;
-        text-shadow: 0 0 2px black;
-        border: none;
-        font-size: 16px;
-        font-weight: 500;
-        width: 100px;
+.dish-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #f49595;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.dish-image:hover {
+    transform: scale(1.1);
+    border-color: #fec89a;
+}
+
+#dish-description {
+    display: flex;
+    background-color: #fff3f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#dish-description.active {
+    display: block;
+}
+
+#dish-description h3 {
+    margin-top: 0;
+    color: #f49595;
+}
+
+#articles {
+    margin-top: 40px;
     
+}
+
+#articles article {
+    background-color: #fff3f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#articles h3 {
+    color: #f49595;
+}
+
+.promo-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f49595;
+    color: #F1CEBE;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dishes-container {
+        justify-content: center;
+    }
+
+    .dish-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    #hero-text {
+        font-size: 28px;
+        margin-top: 120px;
+    }
+}
+
+#meal-plan-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+#dish-list, #selected-meal-plan {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff3f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#dish-list h2, #selected-meal-plan h2 {
+    color: #f49595;
+}
+
+#dish-list ul, #meal-plan-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#dish-list li {
+    margin-bottom: 10px;
+}
+
+.add-button, .remove-button, .increase-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.add-button {
+    background-color: #f49595;
+}
+
+.remove-button {
+    background-color: #e74c3c;
+}
+
+.increase-button {
+    background-color: #2ecc71;
+}
+
+#total-cost {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #f49595;
 }

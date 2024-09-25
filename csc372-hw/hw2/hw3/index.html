@@ -2,45 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite Bliss - Food Blog</title>
     <link href="style.css" rel="stylesheet">
-    <title>Food Blog</title>
 </head>
 <body>
-    <nav>
-    </div> 
-    <div id="logo-nav">
-        <img id="logo-img" src="./Assets/Logo.png">
-    </div>
-    <div id="nav-menu">
-    <a href="#">Home</a>
-    <a href="#">About-Us</a>
-    <a href="#">Contant-Us</a>
-    <img id="search" src="./Assets/magnifying-glass-icon.png">
-    </nav>
-    <div id="hero-text">
-        <h1>Explore our Most Recommended Food Spots!</h1>
-    </div>
-    <header>  
-        <div id="image-gallery">
-            <img class="gallery-images" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?resize=768,574">
-            <img class="gallery-images" src="https://cdn.loveandlemons.com/wp-content/uploads/2021/06/summer-desserts.jpg">
-            <img class="gallery-images" src="https://www.eatingwell.com/thmb/QYZnBgF72TIKI6-A--NyoPa6avY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/greek-salmon-bowl-f681500cbe054bb1adb607ff55094075.jpeg">
-            <img class="gallery-images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP68GaMxj6iSn18pYEVZyW0lLLYgbEzbdmFQ&s">
+    <header>
+        <nav>
+            <div id="logo-nav">
+                <img id="logo-img" src="assets/logo.png" alt="Bite Bliss Logo">
+            </div>
+            <div id="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="meal-plan.html">Meal Plan</a>
+            </div>
+        </nav>
+        <div id="hero-text">
+            <h1>Explore our Most Recommended Food Spots!</h1>
         </div>
-        <p>Expertly picked out restaurants to give your taste buds the treat they deserve! Explore our selections from our experts. Dive into a world of flavour you never new existed. You will find the most unknown and amazing locations. You won't regreat trying our suggestions!</p>
-        
-    </div>
     </header>
 
     <main>
-        <!-- <div id="search-container">
-            <form>
-                <label for="search-bar"></label>
-                <input type="text" id="search-bar" name="search-bar" placeholder="Search our Catalougue...">
-            </form>
-            <button id="search-btn">Search</button> -->
+        <section id="introduction">
+            <h1>Are you a culinary adventurer in search of the perfect meal on campus? 
+                Look no further! We've curated a list of the most exceptional dishes that 
+                are sure to tantalize your taste buds. From fresh pizzas to mouthwatering sushi, 
+                this list has got you covered. So, put on your foodie hat and let's dive into the 
+                delightful world of flavors. Discover hidden gems and popular favorites just a stone's throw away from the Petty building.</h1>
+        </section>
+
+        <section id="recommendations">
+            <article class="restaurant" id="restaurant1">
+                <h2>New York Pizza</h2>
+                <p><strong>Location:</strong> 337 Tate St, 0.3 miles from Petty</p>
+                <p><strong>Specialties:</strong> Gourmet pizzas, New-York Style Pizza</p>
+                <p><strong>Hours:</strong> Mon-Sun: 11am - 2am | Sat-Sun: 12pm - 11pm</p>
+                <div class="dishes-container">
+                    <img class="dish-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOhWUnOv_aJci9j5Oy1LobMGRLF8n2Az1HiQ&s" alt="Margherita Pizza" data-name="Margherita Pizza" data-description="Classic pizza with fresh mozzarella, tomatoes, and basil." data-price="$12">
+                    <img class="dish-image" src="https://images.thomassixt.com/wp-content/uploads/sites/2/2023/06/quattro-formaggi-pizza-1200x800.jpg" alt="Quattro Formaggi" data-name="Quattro Formaggi" data-description="A rich blend of four cheeses with a crispy crust." data-price="$14">
+                    <img class="dish-image" src="https://img.freepik.com/premium-photo/top-view-minimalistic-veggie-delight-pizza-vibrant_759095-167920.jpg" alt="Veggie Delight" data-name="Veggie Delight" data-description="Loaded with seasonal vegetables and a tangy tomato base." data-price="$13">
+                </div>
+            </article>
+
+            <article class="restaurant" id="restaurant2">
+                <h2>Sushi Republic</h2>
+                <p><strong>Location:</strong> 329 Tate St, 0.4 miles from Petty</p>
+                <p><strong>Specialties:</strong> Fresh sushi, sashimi, ramen</p>
+                <p><strong>Hours:</strong> Mon-Sun: 11am - 9:30pm</p>
+                <div class="dishes-container">
+                    <img class="dish-image" src="https://images.immediate.co.uk/production/volatile/sites/30/2024/01/California-roll-a87199c.jpg?quality=90&resize=556,505" alt="California Roll" data-name="California Roll" data-description="Crab, avocado, and cucumber rolled to perfection." data-price="$8">
+                    <img class="dish-image" src="https://thedeliciouslife.com/wp-content/uploads/2023/01/spicy-tuna-canned-tuna-roll.jpg" alt="Spicy Tuna Roll" data-name="Spicy Tuna Roll" data-description="Fresh tuna with a spicy kick." data-price="$9">
+                    <img class="dish-image" src="https://pickledplum.com/wp-content/uploads/2018/03/miso-ramen-1-1200.jpg" alt="Miso Ramen" data-name="Miso Ramen" data-description="Traditional ramen with rich miso broth." data-price="$11">
+                </div>
+            </article>
+
+            <article class="restaurant" id="restaurant3">
+                <h2>Hops Burger</h2>
+                <p><strong>Location:</strong> 2419 Spring Garden St, 0.2 miles from Petty</p>
+                <p><strong>Specialties:</strong> Gourmet burgers, ries</p>
+                <p><strong>Hours:</strong> Mon-Sun: 11am - 10pm | Sat-Sun: 11am - 12am</p>
+                <div class="dishes-container">
+                    <img class="dish-image" src="https://www.sargento.com/assets/Uploads/Recipe/Image/burgercampNachos_07__FillWzExNzAsNTgzXQ.jpg" alt="Classic Cheeseburger" data-name="Classic Cheeseburger" data-description="Juicy beef patty with cheddar cheese, lettuce, and tomato." data-price="$10">
+                    <img class="dish-image" src="https://lovelesscafe.com/wp-content/uploads/2023/08/bbq-bacon-burger-recipe.jpeg" alt="BBQ Bacon Burger" data-name="BBQ Bacon Burger" data-description="Beef patty topped with BBQ sauce and crispy bacon." data-price="$12">
+                    <img class="dish-image" src="https://www.foodandwine.com/thmb/pwFie7NRkq4SXMDJU6QKnUKlaoI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Ultimate-Veggie-Burgers-FT-Recipe-0821-5d7532c53a924a7298d2175cf1d4219f.jpg" alt="Veggie Burger" data-name="Veggie Burger" data-description="Delicious plant-based patty with fresh veggies." data-price="$11">
+                </div>
+            </article>
+      
+        </section>
+
+        <aside id="dish-description">
+        </aside>
+
+        <section id="articles">
+            <article>
+                <h3>Special Promotion at New York Pizza!</h3>
+                <p>This week only 09/23-09/27, New York Pizza! is offering a buy-one-get-one-free deal on all medium-sized pizzas.</p>
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/buy-one-get-one-free-pizza-offer-design-template-7cdacc0bfac8f22cb6dee49f366ad8cc_screen.jpg?ts=1689627629" alt="Pizza Promotion" class="promo-image">
+            </article>
+
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Bite Bliss. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

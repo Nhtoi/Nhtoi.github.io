@@ -151,7 +151,8 @@ p{
     letter-spacing: -0.36px;
 }
 
-#text-block{
+#text-block > h2{
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -223,14 +224,14 @@ input {
     align-items: flex-start;
     border-radius: 60px;
     border: 5px solid var(--Primary-50, #1e2022);
-    padding-left: 45px; /* space for the magnifying glass icon */
+    padding-left: 45px;
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 23px;
     color: #1e2022;
-    background: url('Assets/magnifying-glass-icon.png') no-repeat 15px center; /* Replace with actual icon path */
-    background-size: 20px; /* Adjust the size of the icon */
+    background: url('Assets/magnifying-glass-icon.png') no-repeat 15px center; 
+    background-size: 20px; 
 }
 
 #search-btn{
@@ -290,9 +291,9 @@ h1{
     width: 234px;
     height: 320px;
     flex-shrink: 0;
-    background-image: url("/Project/Assets/Product-Image.jpg");
+    background-image: url("/Assets/Product-Image.jpg");
     background-repeat: no-repeat;
-    background-size: cover; /* or 'contain' based on your preference */
+    background-size: cover; 
     background-position: center;
     border-radius: 3px;
     border: 1px solid var(--Gray-100, #E4E7E9);
@@ -422,7 +423,7 @@ h1{
     flex-shrink: 0;
     border-radius: 4px;
     background: #ECEFF1;
-    background-image: url('/Project/Assets/favorite_border.png');
+    background-image: url('/Assets/favorite_border.png');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -468,3 +469,63 @@ footer{
     margin-left: 20px;
 }
 
+.image-details{
+    
+    width: 300px;
+    width: 300px;
+}
+
+.view-details{
+     color: #000;
+}
+
+.product-info > p,h2{
+    color: #000;
+}
+
+.product-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cart-details > p{
+    color: #000;
+}
+
+.cart-total > p{
+    font-weight: bolder;
+    color: #000;
+}
+
+.cart-item-btn{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    
+}
+
+.cart-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-image{
+    width: 300px;
+}
+
+.shopping-cart{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
+    flex-direction: row;
+}
+
+.cart-total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

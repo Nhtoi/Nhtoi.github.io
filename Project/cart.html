@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Shopping Cart - MaxMotive</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img id="logo-image" src="Assets/Logo.png" alt="MaxMotive Logo">
+            <span id="logo-text">MaxMotive</span>
+        </div>
+        <div id="frame">
+            <div id="nav-menu">
+                <a href="products.html">Shop</a>
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Your Shopping Cart</h1>
+        <div class="shopping-cart">
+        <div class="cart-item">
+            <div class="cart-image-container">
+            <img  src="/Assets/Product-Image.jpg" alt="Product Image" class="cart-image">
+            </div>
+            <div class="cart-details">
+                <p>Product: Protein Powder - Strawberry</p>
+                <p>Price: $60</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1">
+                <div class="cart-item-btn">
+                <button class="update-btn">Update Quantity</button>
+                <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cart-item">
+            <div class="cart-image-container">
+                <img  src="/Assets/Product-Image.jpg" alt="Product Image" class="cart-image">
+                </div>
+            <div class="cart-details">
+                <p>Product Protein Powder - Strawberry</p>
+                <p>Price: $60</p>
+                <label for="quantity2">Quantity:</label>
+                <input type="number" id="quantity2" name="quantity2" value="2">
+                <div class="cart-item-btn">
+                <button class="update-btn">Update Quantity</button>
+                <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="cart-total">
+            <p>Total: $180</p>
+            <button>Check-out</button>
+        </div>
+    </main>
+
+    <footer>
+        <div id="content">
+            <div id="info">
+                <div id="logo">
+                    <img id="logo-image" src="Assets/Logo.png" alt="MaxMotive Logo">
+                    <span id="logo-text">MaxMotive</span>
+                </div>
+                <p id="footer-info">
+                    Max Motive &copy; 2024. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="/cart.js"></script>
+</body>
+
+</html>

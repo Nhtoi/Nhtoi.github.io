@@ -52,13 +52,13 @@ function startComputerThrow() {
     let shuffleCount = 0;
     const shuffleInterval = setInterval(() => {
         const randomChoice = Math.ceil(Math.random() * 3);
-        computerImage.src = `/csc372-hw/hw4/resources/${choices[randomChoice].toLowerCase()}.PNG`;
+        computerImage.src = `/csc372-hw/hw4/resources/${choices[randomChoice]}.PNG`;
 
         shuffleCount++;
         if (shuffleCount >= 6) { 
             clearInterval(shuffleInterval);
             computerChoice = Math.ceil(Math.random() * 3); 
-            computerImage.src = `/csc372-hw/hw4/resources/${choices[computerChoice].toLowerCase()}.PNG`;
+            computerImage.src = `/csc372-hw/hw4/resources/${choices[computerChoice]}.PNG`;
             gameLoop();
         }
     }, 500);

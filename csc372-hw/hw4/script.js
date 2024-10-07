@@ -52,13 +52,13 @@ function startComputerThrow() {
     let shuffleCount = 0;
     const shuffleInterval = setInterval(() => {
         const randomChoice = Math.ceil(Math.random() * 3);
-        computerImage.src = `/csc372-hw/hw4/resources/${choices[randomChoice]}.png`;
+        computerImage.src = `/csc372-hw/hw4/resources/${choices[randomChoice].toLowerCase()}.PNG`;
 
         shuffleCount++;
         if (shuffleCount >= 6) { 
             clearInterval(shuffleInterval);
             computerChoice = Math.ceil(Math.random() * 3); 
-            computerImage.src = `/csc372-hw/hw4/resources/${choices[computerChoice]}.png`;
+            computerImage.src = `/csc372-hw/hw4/resources/${choices[computerChoice].toLowerCase()}.PNG`;
             gameLoop();
         }
     }, 500);
@@ -90,7 +90,7 @@ document.getElementById("reset").addEventListener('click', () => {
     document.getElementById("player-score").innerText = 0;
     document.getElementById("computer-score").innerText = 0;
     document.getElementById("outcome").innerText = `Outcome: `;
-    document.getElementById("computer-choice-image").src = "/csc372-hw/hw4/resources/question-mark.png";
+    document.getElementById("computer-choice-image").src = "/csc372-hw/hw4/resources/question-mark.PNG";
 
     
     localStorage.removeItem('score');

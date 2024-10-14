@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project/Style/admin.css">
+    <title>Admin - Product Listing</title>
+</head>
+<body>
+    <nav>
+        <a href="admin-upload.html">Bulk Upload</a>
+        <a href="admin-products.html">Product Listing</a>
+        <a href="index.html">Logout</a>
+    </nav>
+
+    <h1>Product Listing</h1>
+
+    <div id="search-filter">
+        <input type="text" id="search" placeholder="Search by product name or category...">
+        <button type="button">Search</button>
+        <button type="button" onclick="window.location.href='product-edit.html'">Add New Product</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Protein Powder</td>
+                <td>Strawberry flavor</td>
+                <td>Supplements</td>
+                <td>$60</td>
+                <td>
+                    <a href="product-edit.html">Edit</a> |
+                    <a href="#">Delete</a> |
+                    <a href="#">Archive</a>
+                </td>
+            </tr>
+            <!-- Repeat for each product -->
+        </tbody>
+    </table>
+</body>
+</html>
